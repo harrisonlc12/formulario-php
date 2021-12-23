@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html> 
+    <head xmlns="http://www.w3.org/1999/xhtml"> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Rellene el formulario</title>
+        <link rel="stylesheet" href="assets/estilo.css" type="text/css"> 
+    </head> 
+    <body> 
+        <form name='formulario' class="contact_form" id='formulario' method='post' action='assets/enviar_email.php' enctype="multipart/form-data"> 
+            <div>
+                <ul>
+                <li>  
+                    <h2>Contácto</h2>  
+                    <span class="required_notification">* Datos requeridos</span>  
+                </li>
+
+
+            <li>
+                <label for="name">Nombre y apellidos niño</label>
+                <input type='text' name='Nombre del niño' id='Nombre del niño' placeholder="Nombre del niño" required>
+                <span class="form_hint">Formato correcto: "Nombre (s)"</span>
+            </li>
+            <li>
+                <label for="apellidos">Documento Id Niño</label> 
+                <input type='text' name='Documento' id='Documento' placeholder="Numero" required>
+                <span class="form_hint">Formato correcto: "123456"</span>
+            </li>
+            <li>
+            
+            <label for="telefono">Fecha Nacimiento Niño</label>
+            <input type='text' name='Fecha de nacimiento' id='Fecha de nacimiento' placeholder="Fecha (dia/mes/año)">
+            <span class="form_hint">Formato correcto: "Fecha (dia/mes/año)"</span>
+            </li>
+            <li>
+                <label for="email">Nombre y apellidos Madre</label>
+                <input type='text' name='Nombre madre' id='Nombre madre' placeholder="Nombre madre" required>
+                <span class="form_hint">Formato correcto: "Nombres"</span>
+            </li> 
+            <li> 
+            
+            <label for="edad">Documento Id Madre</label>
+                <input type='text' name='ID madre' id='ID madre' placeholder="Documento" required>
+                <span class="form_hint">Formato correcto: "Documento"</span>
+            </li> 
+            <li>  
+            
+            <label for="edad">Nombre y apellido Padre</label>
+                <input type='text' name='Nombre padre' id='Nombre padre' placeholder="Nombre padre" required>
+                <span class="form_hint">Formato correcto: "Nombres"</span>
+            </li> 
+            <li>  
+            
+            
+            <label for="edad">Documento Id Padre</label>
+                <input type='text' name='ID papá' id='ID papá' placeholder="Documento" required>
+                <span class="form_hint">Formato correcto: "Documento"</span>
+            </li> 
+            <li>
+            
+            <label for="edad">Dirección:</label>
+                <input type='text' name='Direcciòn' id='Domicilio' placeholder="Domicilio" required>
+                <span class="form_hint">Formato correcto: "Direccion Domicilio"</span>
+            </li> 
+            <li>  
+            
+            
+            <label for="edad">Telefonos:</label>
+                <input type='text' name='Telefonos' id='Telefonos' placeholder="Telefonos" required>
+                <span class="form_hint">Formato correcto: "Telefonos"</span>
+            </li> 
+            <li>    
+            
+                    <label for="message">Mensaje:</label>  
+                    <textarea name="mensaje" cols="40" rows="6" placeholder="Ingresa un mensaje (opcional)"></textarea>
+                    <span class="form_hint">Ingresar información adicional</span> 
+                     
+                </li>
+            <li>
+                <label for="adjuntar archivo">Adjuntar registro civil:</label> 
+                <input type='file' name='archivo1' id='archivo1' placeholder="carga tu boucher" required>
+            </li> 
+            <li> 
+                <button class="submit" type='submit' value='Enviar formulario'>Enviar Mensaje</button>
+                <button class="submit" type='reset' value='Reiniciar formulario'>Borrar Datos</button>
+
+            </li>
+            </ul> 
+        </form> 
+    </body> 
+</html>
